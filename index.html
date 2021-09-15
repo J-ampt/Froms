@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Register form</title>
+</head>
+<body>
+  <div class="reg-form">
+    <section>
+      <div class="head">
+        <h1>Register</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <form class="form" action="" method="post">
+        <div class="credetials">
+          <input type="text" id="name" required minlength="4" maxlength="8" size="10" placeholder="Name">
+          <input type="text" id="last-name" required minlength="4" maxlength="8" size="10" placeholder="Last name">
+        </div>
+        <input type="email" id="email"
+       pattern=".+@globex\.com" required placeholder="Email">
+       <input type="password" id="pass" name="password"
+       minlength="8" required placeholder="****">
+       <input type="password" id="pass" name="password"
+       minlength="8" required placeholder="****">
+       <div class="terms">
+        <input type="checkbox" id="" name=""
+        checked>
+        <label class="terms">I accept the Terms of Use...</label>
+       </div>
+       <input class="reg-btn" type="button" value="Register">
+      </form>
+    </section>
+  </div>
+</body>
+</html>

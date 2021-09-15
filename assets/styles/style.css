@@ -1,0 +1,76 @@
+body{
+  display: flex;
+  justify-content: center;
+
+  background-color:#858794;
+}
+
+.reg-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 15em;
+  width: 20em;
+  height: 22em;
+
+  text-align: center;
+
+  background-color: white;
+}
+
+.head>h1{
+  font-size: 2em;
+  color: gray;
+}
+
+h1:before,
+h1:after {
+  background-color: gray;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 25%;
+}
+
+.head>p{
+padding: 10px;
+
+  font-size: 0.8em;
+  color: gray;
+}
+
+.form{
+  padding:em;
+  margin-bottom: 1em;
+}
+
+#email{
+  width: 250px;
+}
+
+#pass{
+  width: 250px;
+}
+
+.terms{
+  font: 1rem;
+  width: 250px;
+}
+
+.reg-btn{
+  width: 258px;
+  height: 24px;
+
+  background-color: #0ac70a;
+  border: none;
+}
+
+*::placeholder{
+  font-style: italic;
+  font-size: 1em;
+}
+
+section{
+  padding: 20px 10px 20px 10px;
+}
