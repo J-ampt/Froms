@@ -1,76 +1,124 @@
-body{
-  display: flex;
-  justify-content: center;
-
-  background-color:#858794;
+:root{
+  --main-color: #9094b1;
+  --link-color: green;
+  --text-color: #9a9aa4;
 }
 
-.reg-form{
-  display: flex;
-  justify-content: center;
-  margin-top: 15em;
-  width: 20em;
-  height: 22em;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  min-height: 100vh;
+  padding-top: 50px;
 
   text-align: center;
+  font-family: sans-serif;
 
-  background-color: white;
+  background-color: var(--main-color);
 }
 
-.head>h1{
-  font-size: 2em;
-  color: gray;
+.register{
+  width: 100%;
+  max-width: 500px;
+  min-width: 320px;
+  margin: auto;
+  padding: 20px 50px;
+  background-color: #fff;
 }
 
-h1:before,
-h1:after {
-  background-color: gray;
-  content: "";
-  display: inline-block;
-  height: 1px;
+.register-heading{
   position: relative;
-  vertical-align: middle;
-  width: 25%;
+  width: 100%;
+  margin: 25px 0;
+
+  font-size: 2em;
 }
 
-.head>p{
-padding: 10px;
 
-  font-size: 0.8em;
-  color: gray;
+
+.register-heading::before{
+  content: '';
+  display: inline-block;
+  width: 35%;
+  height: 2px;
+  background-color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
-.form{
-  padding:em;
-  margin-bottom: 1em;
+.register-heading::after{
+  content: '';
+  display: inline-block;
+  width: 35%;
+  height: 2px;
+  background-color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
-#email{
-  width: 250px;
+.register-form{
+  min-height: 50vh;
+  justify-content: space-evenly;
 }
 
-#pass{
-  width: 250px;
+.register>p{
+  margin-bottom: 20px;
+  color: var(--text-color);
 }
 
-.terms{
-  font: 1rem;
-  width: 250px;
+.flex-column{
+  display: flex;
+  flex-direction: column;
 }
 
-.reg-btn{
-  width: 258px;
-  height: 24px;
+.credentials{
+  display: flex;
+  justify-content: space-between;
+}
 
-  background-color: #0ac70a;
-  border: none;
+.credentials>*{
+  width: 45%;
+}
+
+input{
+  padding: 0.8em;
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
 }
 
 *::placeholder{
   font-style: italic;
+  text-transform: capitalize;
   font-size: 1em;
 }
 
-section{
-  padding: 20px 10px 20px 10px;
+a:not(p>a){
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.accept{
+  text-align: left;
+  color: var(--text-color);
+}
+
+.btn{
+  background-color: var(--link-color);
+  color: #fff;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: bolder;
+
+  border-radius: 3px;
+}
+
+.overlow-text{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

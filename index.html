@@ -7,31 +7,32 @@
   <title>Register form</title>
 </head>
 <body>
-  <div class="reg-form">
-    <section>
-      <div class="head">
-        <h1>Register</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <form class="form" action="" method="post">
-        <div class="credetials">
-          <input type="text" id="name" required minlength="4" maxlength="8" size="10" placeholder="Name">
-          <input type="text" id="last-name" required minlength="4" maxlength="8" size="10" placeholder="Last name">
-        </div>
-        <input type="email" id="email"
-       pattern=".+@globex\.com" required placeholder="Email">
-       <input type="password" id="pass" name="password"
-       minlength="8" required placeholder="****">
-       <input type="password" id="pass" name="password"
-       minlength="8" required placeholder="****">
-       <div class="terms">
-        <input type="checkbox" id="" name=""
-        checked>
-        <label class="terms">I accept the Terms of Use...</label>
-       </div>
-       <input class="reg-btn" type="button" value="Register">
-      </form>
+  <div class="wrapper">
+    <section class="register flex-column" >
+        <h1 class="register-heading overlow-text">Register</h1>
+        <p>Create your account. It's free and only takes a minute</p>
+        <form class="register-form flex-column" action="">
+          <div class="credentials">
+            <input type="text" name="name" required minlength="4" maxlength="8" size="10" placeholder="Name">
+            <input type="text" name="last-name" required minlength="4" maxlength="8" size="10" placeholder="Last name">
+          </div>
+          <input type="email" name="email"
+            pattern=".+@globex\.com" required placeholder="Email">
+        <input type="password" name="password"
+          minlength="8" required placeholder="****">
+        <input type="password" name="password"
+            minlength="8" required placeholder="****">
+          <label class="accept">
+            <input type="checkbox" name="accept" required>
+            I accept the 
+            <a href="#">Term of use</a>
+            &
+            <a href="#">Privacy policy</a>
+          </label>  
+          <button class="btn overlow-text" type="submit">register now</button>
+        </form>
     </section>
+    <p>Already have an account? <a href="#">Sign in </a></p>
   </div>
 </body>
 </html>
